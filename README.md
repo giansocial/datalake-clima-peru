@@ -1,10 +1,8 @@
 # Data Lake Climático - Perú
 
-Soy Gian Cruz.
+¿Sabías que Perú concentra 28 de los 32 climas del mundo según la clasificación de Köppen? En un solo país puedes encontrar desiertos donde no llueve en décadas, selvas con 4,000 mm de precipitación anual y ciudades a 4,300 msnm donde la temperatura oscila 25°C en un mismo día.
 
-Pipeline que construye un data lake con información climática histórica de 26 ciudades del Perú. Los datos se obtienen de la API abierta de Open-Meteo y se almacenan en formato Parquet particionado por región y ciudad.
-
-Perú tiene 28 de los 32 climas del mundo según la clasificación de Köppen. Este proyecto captura esa diversidad analizando temperatura, precipitación, viento y eventos extremos a lo largo de las tres regiones naturales: Costa, Sierra y Selva.
+Soy Gian Cruz. Construí este pipeline para capturar esa diversidad climática en un data lake estructurado. Consume la API abierta de Open-Meteo para 26 ciudades del Perú, almacena los datos en formato Parquet particionado por región y ciudad, y genera métricas de amplitud térmica, clasificación climática y detección de eventos extremos a lo largo de Costa, Sierra y Selva.
 
 ## Qué hace
 
