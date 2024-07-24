@@ -120,3 +120,36 @@ Peru has 28 of the 32 world climates (Köppen classification). This project capt
 |--------|-------------|--------|
 | Open-Meteo Archive API | Datos climáticos históricos diarios (temperatura, precipitación, viento) | [https://open-meteo.com/en/docs/historical-weather-api](https://open-meteo.com/en/docs/historical-weather-api) |
 | Open-Meteo | Plataforma de datos meteorológicos abiertos | [https://open-meteo.com/](https://open-meteo.com/) |
+
+## Licencia
+
+MIT
+
+---
+
+# Climate Data Lake - Peru
+
+Did you know Peru has 28 of the world's 32 climates according to the Koppen classification? In a single country you can find deserts with no rain for decades, rainforests with 4,000 mm of annual rainfall, and cities at 4,300 meters above sea level where the temperature swings 25°C in a single day.
+
+I'm Gian Cruz. I built this pipeline to capture that climate diversity in a structured data lake. It consumes the Open-Meteo public API for 26 Peruvian cities, stores data in Parquet format partitioned by region and city, and generates metrics for thermal amplitude, climate classification, and extreme event detection across the Coast, Highlands, and Jungle regions.
+
+## Quick start
+
+```bash
+git clone https://github.com/giansocial/datalake-clima-peru.git
+cd datalake-clima-peru
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+python -m src.pipeline --start 2020-01-01 --end 2023-12-31
+```
+
+## Data sources
+
+| Source | Description | Link |
+|--------|-------------|------|
+| Open-Meteo Archive API | Historical daily climate data (temperature, precipitation, wind) | [https://open-meteo.com/en/docs/historical-weather-api](https://open-meteo.com/en/docs/historical-weather-api) |
+| Open-Meteo | Open meteorological data platform | [https://open-meteo.com/](https://open-meteo.com/) |
+
+## License
+
+MIT
