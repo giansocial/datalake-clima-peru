@@ -121,6 +121,16 @@ Peru has 28 of the 32 world climates (Köppen classification). This project capt
 | Open-Meteo Archive API | Datos climáticos históricos diarios (temperatura, precipitación, viento) | [https://open-meteo.com/en/docs/historical-weather-api](https://open-meteo.com/en/docs/historical-weather-api) |
 | Open-Meteo | Plataforma de datos meteorológicos abiertos | [https://open-meteo.com/](https://open-meteo.com/) |
 
+## Visualizaciones
+
+Resultados del analisis exploratorio (notebook completo en `notebooks/`):
+
+![Temperatura maxima mensual por ciudad](docs/images/grafico_01.png)
+
+![Distribucion de temperatura por ciudad](docs/images/grafico_02.png)
+
+![Precipitacion mensual comparativa](docs/images/grafico_03.png)
+
 ## Licencia
 
 MIT
